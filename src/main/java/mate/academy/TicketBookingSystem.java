@@ -6,7 +6,7 @@ public class TicketBookingSystem {
     private final Semaphore semaphore;
 
     public TicketBookingSystem(int totalSeats) {
-            this.semaphore = new Semaphore(totalSeats);
+        this.semaphore = new Semaphore(totalSeats);
     }
 
     public BookingResult attemptBooking(String user) {
